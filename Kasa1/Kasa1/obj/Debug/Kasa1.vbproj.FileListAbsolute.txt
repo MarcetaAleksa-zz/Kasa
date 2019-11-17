@@ -1,0 +1,13 @@
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\bin\Debug\Kasa1.exe.config
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\bin\Debug\Kasa1.exe
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\bin\Debug\Kasa1.pdb
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\bin\Debug\Kasa1.xml
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.vbprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.Resources.resources
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.vbproj.GenerateResource.cache
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.exe
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.xml
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.pdb
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.pocetna.resources
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.pregledArtikala.resources
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.dodajArtikal.resources
