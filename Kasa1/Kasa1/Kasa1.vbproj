@@ -107,6 +107,12 @@
     <Compile Include="pregledArtikala.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="skiniStanje.Designer.vb">
+      <DependentUpon>skiniStanje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="skiniStanje.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="dodajArtikal.resx">
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pregledArtikala.resx">
       <DependentUpon>pregledArtikala.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skiniStanje.resx">
+      <DependentUpon>skiniStanje.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
