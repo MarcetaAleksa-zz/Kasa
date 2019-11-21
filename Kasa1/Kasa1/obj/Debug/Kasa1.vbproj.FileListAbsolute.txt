@@ -11,3 +11,4 @@ C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.pdb
 C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.pocetna.resources
 C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.pregledArtikala.resources
 C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.dodajArtikal.resources
+C:\Users\Korisnik\Desktop\Kasa1\Kasa1\obj\Debug\Kasa1.skiniStanje.resources
