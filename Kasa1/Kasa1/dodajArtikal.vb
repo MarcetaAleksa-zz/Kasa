@@ -55,5 +55,30 @@
 
     Private Sub dodajArtikal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Panel1.Select()
+
+
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Try
+            baza.Dadapter.Fill(baza.Dtabela)
+            baza.Konekcija.Open()
+            If baza.Dtabela.Rows.Count = 0 Then
+
+                baza.Dartikli.CommandText = "Insert into dbo.roba (ID, Naziv, Kolicina) VALUES(" & UR_Name_TextBox2.Text & ", '" & UR_Name_TextBox1.Text & "', " & UR_Name_TextBox.Text & ")"
+                baza.Dartikli.ExecuteNonQuery()
+
+            Else
+
+                baza.Dartikli.CommandText = "UPDATE roba set kolicina = kolicina +  " & UR_Name_TextBox.Text & "where ID = " & UR_Name_TextBox2.Text & ""
+                baza.Dartikli.ExecuteNonQuery()
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            baza.Konekcija.Close()
+        End Try
     End Sub
 End Class

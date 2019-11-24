@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="baza.vb" />
     <Compile Include="dodajArtikal.Designer.vb">
       <DependentUpon>dodajArtikal.vb</DependentUpon>
     </Compile>

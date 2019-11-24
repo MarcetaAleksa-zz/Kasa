@@ -18,6 +18,8 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Me.Close()
+        table.Controls.Clear()
+
         pocetna.Show()
     End Sub
 
@@ -35,20 +37,19 @@
     End Sub
 
     Private Sub pregledArtikala_Load(sender As Object, e As EventArgs) Handles Me.Load
-        'Dim sqlCommand As New SqlCommand("SELECT * FROM oprema ", containerdb.connection)
-        'Dim adapter As New SqlDataAdapter(sqlCommand)
-        'Dim oprema_table As New DataTable()
 
 
-        'Dim brojacOpreme As Integer = 0
+
+        Dim brojacOpreme As Integer = 0
         Try
-            '    adapter.Fill(oprema_table)
-            '    brojacOpreme = oprema_table.Rows.Count
+            baza.Konekcija.Open()
+            baza.Aartikli.Fill(baza.Tartikli)
+            brojacOpreme = baza.Tartikli.Rows.Count
 
-            For i = 0 To 80
+            For i = 0 To brojacOpreme
                 Dim L2 As Label = New Label
                 With L2
-                    .Text = i.ToString             'kolicina izvucena u label
+                    .Text = baza.Tartikli.Rows(i)(0)           'kolicina izvucena u label
                     .TextAlign = ContentAlignment.MiddleCenter
                     .Visible = True
                     .Font = New Font("Microsoft Sans Serif", 15)
@@ -60,7 +61,7 @@
                 Dim L As Label = New Label
                 With L
                     .AutoSize = True
-                    .Text = "Artikal bod rednim brojem" + i.ToString            'naziv artikla izvucen u label
+                    .Text = baza.Tartikli.Rows(i)(1)         'naziv artikla izvucen u label
                     .TextAlign = ContentAlignment.MiddleCenter
                     .Visible = True
                     .Anchor = AnchorStyles.Bottom And AnchorStyles.Right And AnchorStyles.Top And AnchorStyles.Bottom
@@ -71,7 +72,7 @@
 
                 Dim L1 As Label = New Label
                 With L1
-                    .Text = i.ToString             'kolicina izvucena u label
+                    .Text = baza.Tartikli.Rows(i)(2)           'kolicina izvucena u label
                     .TextAlign = ContentAlignment.MiddleCenter
                     .Visible = True
                     .Font = New Font("Microsoft Sans Serif", 15)
@@ -116,6 +117,11 @@
                 'End With
             Next
         Catch ex As Exception
+
+        Finally
+            baza.Konekcija.Close()
+
+
         End Try
     End Sub
 
