@@ -24,24 +24,24 @@ Partial Class skiniStanje
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(skiniStanje))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.UR_Name_TextBox = New System.Windows.Forms.TextBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.UR_Name_TextBox2 = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.UR_Name_TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.UR_Name_TextBox = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -59,6 +59,94 @@ Partial Class skiniStanje
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(877, 212)
         Me.Panel1.TabIndex = 51
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.DarkOrange
+        Me.Panel2.Controls.Add(Me.TextBox1)
+        Me.Panel2.Location = New System.Drawing.Point(223, 103)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(392, 39)
+        Me.Panel2.TabIndex = 306
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.DarkOrange
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Enabled = False
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.ForeColor = System.Drawing.SystemColors.Info
+        Me.TextBox1.Location = New System.Drawing.Point(13, 8)
+        Me.TextBox1.MaxLength = 25
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(367, 22)
+        Me.TextBox1.TabIndex = 112
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(275, 20)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(318, 39)
+        Me.Label1.TabIndex = 305
+        Me.Label1.Text = "SKINI SA STANJA"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.DarkOrange
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(676, 151)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(148, 47)
+        Me.Button2.TabIndex = 304
+        Me.Button2.Text = "Skini artikal"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.DarkOrange
+        Me.Panel5.Controls.Add(Me.UR_Name_TextBox)
+        Me.Panel5.Location = New System.Drawing.Point(639, 103)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(183, 39)
+        Me.Panel5.TabIndex = 302
+        '
+        'UR_Name_TextBox
+        '
+        Me.UR_Name_TextBox.BackColor = System.Drawing.Color.DarkOrange
+        Me.UR_Name_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.UR_Name_TextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UR_Name_TextBox.ForeColor = System.Drawing.SystemColors.Info
+        Me.UR_Name_TextBox.Location = New System.Drawing.Point(5, 8)
+        Me.UR_Name_TextBox.MaxLength = 25
+        Me.UR_Name_TextBox.Name = "UR_Name_TextBox"
+        Me.UR_Name_TextBox.Size = New System.Drawing.Size(165, 22)
+        Me.UR_Name_TextBox.TabIndex = 112
+        Me.UR_Name_TextBox.Text = "Unesi kolicinu ovde"
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.DarkOrange
+        Me.Panel3.Controls.Add(Me.UR_Name_TextBox2)
+        Me.Panel3.Location = New System.Drawing.Point(37, 103)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(167, 39)
+        Me.Panel3.TabIndex = 301
+        '
+        'UR_Name_TextBox2
+        '
+        Me.UR_Name_TextBox2.BackColor = System.Drawing.Color.DarkOrange
+        Me.UR_Name_TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.UR_Name_TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UR_Name_TextBox2.ForeColor = System.Drawing.SystemColors.Info
+        Me.UR_Name_TextBox2.Location = New System.Drawing.Point(15, 7)
+        Me.UR_Name_TextBox2.MaxLength = 25
+        Me.UR_Name_TextBox2.Name = "UR_Name_TextBox2"
+        Me.UR_Name_TextBox2.Size = New System.Drawing.Size(145, 22)
+        Me.UR_Name_TextBox2.TabIndex = 112
+        Me.UR_Name_TextBox2.Text = "Unesi sifru ovde"
         '
         'PictureBox2
         '
@@ -90,94 +178,6 @@ Partial Class skiniStanje
         Me.PictureBox5.TabIndex = 4
         Me.PictureBox5.TabStop = False
         '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.DarkOrange
-        Me.Panel3.Controls.Add(Me.UR_Name_TextBox2)
-        Me.Panel3.Location = New System.Drawing.Point(37, 103)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(167, 39)
-        Me.Panel3.TabIndex = 301
-        '
-        'UR_Name_TextBox2
-        '
-        Me.UR_Name_TextBox2.BackColor = System.Drawing.Color.DarkOrange
-        Me.UR_Name_TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.UR_Name_TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UR_Name_TextBox2.ForeColor = System.Drawing.SystemColors.Info
-        Me.UR_Name_TextBox2.Location = New System.Drawing.Point(15, 7)
-        Me.UR_Name_TextBox2.MaxLength = 25
-        Me.UR_Name_TextBox2.Name = "UR_Name_TextBox2"
-        Me.UR_Name_TextBox2.Size = New System.Drawing.Size(145, 22)
-        Me.UR_Name_TextBox2.TabIndex = 112
-        Me.UR_Name_TextBox2.Text = "Unesi sifru ovde"
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.DarkOrange
-        Me.Panel5.Controls.Add(Me.UR_Name_TextBox)
-        Me.Panel5.Location = New System.Drawing.Point(639, 103)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(183, 39)
-        Me.Panel5.TabIndex = 302
-        '
-        'UR_Name_TextBox
-        '
-        Me.UR_Name_TextBox.BackColor = System.Drawing.Color.DarkOrange
-        Me.UR_Name_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.UR_Name_TextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UR_Name_TextBox.ForeColor = System.Drawing.SystemColors.Info
-        Me.UR_Name_TextBox.Location = New System.Drawing.Point(5, 8)
-        Me.UR_Name_TextBox.MaxLength = 25
-        Me.UR_Name_TextBox.Name = "UR_Name_TextBox"
-        Me.UR_Name_TextBox.Size = New System.Drawing.Size(165, 22)
-        Me.UR_Name_TextBox.TabIndex = 112
-        Me.UR_Name_TextBox.Text = "Unesi kolicinu ovde"
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.DarkOrange
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(676, 151)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(148, 47)
-        Me.Button2.TabIndex = 304
-        Me.Button2.Text = "Skini artikal"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(275, 20)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(318, 39)
-        Me.Label1.TabIndex = 305
-        Me.Label1.Text = "SKINI SA STANJA"
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.DarkOrange
-        Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Location = New System.Drawing.Point(223, 103)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(392, 39)
-        Me.Panel2.TabIndex = 306
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.DarkOrange
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.SystemColors.Info
-        Me.TextBox1.Location = New System.Drawing.Point(13, 8)
-        Me.TextBox1.MaxLength = 25
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(367, 22)
-        Me.TextBox1.TabIndex = 112
-        '
         'skiniStanje
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -190,15 +190,15 @@ Partial Class skiniStanje
         Me.Text = "skiniStanje"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

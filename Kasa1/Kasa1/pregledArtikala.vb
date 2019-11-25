@@ -1,4 +1,5 @@
-﻿Public Class pregledArtikala
+﻿Imports System.Data.SqlClient
+Public Class pregledArtikala
 
     Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove
         PictureBox1.BorderStyle = BorderStyle.None
@@ -37,19 +38,21 @@
     End Sub
 
     Private Sub pregledArtikala_Load(sender As Object, e As EventArgs) Handles Me.Load
-
+        Dim Kartikli As New SqlCommand("SELECT * FROM roba", baza.Konekcija)
+        Dim Aartikli As New SqlDataAdapter(Kartikli)
+        Dim Tartikli As New DataTable()
 
 
         Dim brojacOpreme As Integer = 0
         Try
             baza.Konekcija.Open()
-            baza.Aartikli.Fill(baza.Tartikli)
-            brojacOpreme = baza.Tartikli.Rows.Count
+            Aartikli.Fill(Tartikli)
+            brojacOpreme = Tartikli.Rows.Count
 
             For i = 0 To brojacOpreme
                 Dim L2 As Label = New Label
                 With L2
-                    .Text = baza.Tartikli.Rows(i)(0)           'kolicina izvucena u label
+                    .Text = Tartikli.Rows(i)(0)           'kolicina izvucena u label
                     .TextAlign = ContentAlignment.MiddleCenter
                     .Visible = True
                     .Font = New Font("Microsoft Sans Serif", 15)
@@ -61,7 +64,7 @@
                 Dim L As Label = New Label
                 With L
                     .AutoSize = True
-                    .Text = baza.Tartikli.Rows(i)(1)         'naziv artikla izvucen u label
+                    .Text = Tartikli.Rows(i)(1)         'naziv artikla izvucen u label
                     .TextAlign = ContentAlignment.MiddleCenter
                     .Visible = True
                     .Anchor = AnchorStyles.Bottom And AnchorStyles.Right And AnchorStyles.Top And AnchorStyles.Bottom
@@ -72,7 +75,7 @@
 
                 Dim L1 As Label = New Label
                 With L1
-                    .Text = baza.Tartikli.Rows(i)(2)           'kolicina izvucena u label
+                    .Text = Tartikli.Rows(i)(2)           'kolicina izvucena u label
                     .TextAlign = ContentAlignment.MiddleCenter
                     .Visible = True
                     .Font = New Font("Microsoft Sans Serif", 15)
