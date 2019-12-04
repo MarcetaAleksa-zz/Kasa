@@ -99,4 +99,41 @@ Public Class skiniStanje
             baza.Konekcija.Close()
         End Try
     End Sub
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim command As New SqlCommand("SELECT Naziv from roba where ID = " & UR_Name_TextBox2.Text & "", baza.Konekcija)
+        Dim adapt As New SqlDataAdapter(command)
+
+        Dim table As New DataTable()
+        Try
+            adapt.Fill(table)
+        Catch ex As Exception
+
+        End Try
+
+        ' MessageBox.Show(table.Rows(0)(0))
+        'TextBox1.Text = table.Rows(0)(0)
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub UR_Name_TextBox2_TextChanged(sender As Object, e As EventArgs) Handles UR_Name_TextBox2.TextChanged
+        Timer1.Start()
+        Try
+            Dim command As New SqlCommand("SELECT Naziv from roba where ID = " & UR_Name_TextBox2.Text & "", baza.Konekcija)
+            Dim adapt As New SqlDataAdapter(command)
+            Dim table As New DataTable()
+            adapt.Fill(table)
+            TextBox1.Text = table.Rows(0)(0)
+
+        Catch ex As Exception
+
+        End Try
+
+        'TextBox1.Text = table.Rows(0)(0)
+
+
+
+    End Sub
 End Class

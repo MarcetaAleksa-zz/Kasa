@@ -210,6 +210,7 @@ Partial Class dodajArtikal
         'Timer1
         '
         Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 10000000
         '
         'dodajArtikal
         '
